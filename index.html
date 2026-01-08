@@ -69,7 +69,7 @@
         }
 
         .header::before {
-            content: '» «';
+            content: '« »';
             position: absolute;
             font-size: 200px;
             color: rgba(255, 255, 255, 0.1);
@@ -216,7 +216,7 @@
 
         .lesson-title::before,
         .lesson-title::after {
-            content: '»';
+            content: '«';
             font-size: 1.5em;
             color: var(--secondary-color);
         }
@@ -710,7 +710,7 @@
                     <h2 class="lesson-title">تعريف علامة التنصيص</h2>
                     
                     <div class="lesson-text">
-                        <strong>علامة التنصيص</strong> هي علامة من علامات الترقيم تُستخدم لحصر الكلام المنقول بنصه، وتُرسم هكذا: <span class="quote-mark">» «</span>
+                        <strong>علامة التنصيص</strong> هي علامة من علامات الترقيم تُستخدم لحصر الكلام المنقول بنصه، وتُرسم هكذا: <span class="quote-mark">« »</span>
                     </div>
 
                     <div class="example-box">
@@ -727,16 +727,16 @@
                     <div class="example-box">
                         <div class="example-title">📖 أمثلة:</div>
                         <div class="example-text">
-                            <p>قال رسول الله - صلى الله عليه وسلم -: <span class="quote-mark">»</span> إنما الأعمال بالنيات <span class="quote-mark">«</span></p>
-                            <p style="margin-top: 15px;">قال الرسول - صلى الله عليه وسلم -: <span class="quote-mark">»</span> من غشنا فليس منا <span class="quote-mark">«</span></p>
-                            <p style="margin-top: 15px;">قال عمر بن الخطاب - رضي الله عنه -: <span class="quote-mark">»</span> علموا أولادكم الرماية والسباحة وركوب الخيل <span class="quote-mark">«</span></p>
+                            <p>قال رسول الله - صلى الله عليه وسلم -: <span class="quote-mark">«</span> إنما الأعمال بالنيات <span class="quote-mark">»</span></p>
+                            <p style="margin-top: 15px;">قال الرسول - صلى الله عليه وسلم -: <span class="quote-mark">«</span> من غشنا فليس منا <span class="quote-mark">»</span></p>
+                            <p style="margin-top: 15px;">قال عمر بن الخطاب - رضي الله عنه -: <span class="quote-mark">«</span> علموا أولادكم الرماية والسباحة وركوب الخيل <span class="quote-mark">»</span></p>
                         </div>
                     </div>
 
                     <div class="example-box">
                         <div class="example-title">💡 ملاحظة مهمة:</div>
                         <div class="lesson-text">
-                            توضع علامة التنصيص في بداية الكلام المنقول ونهايته، ويكون القوس الأول <span class="quote-mark">»</span> في البداية والقوس الثاني <span class="quote-mark">«</span> في النهاية.
+                            توضع علامة التنصيص في بداية الكلام المنقول ونهايته، ويكون القوس الأول <span class="quote-mark">«</span> في البداية والقوس الثاني <span class="quote-mark">»</span> في النهاية.
                         </div>
                     </div>
                 </div>
@@ -756,8 +756,8 @@
                     </div>
 
                     <div class="quote-marks-container">
-                        <div class="draggable-mark" draggable="true" data-mark="»">»</div>
                         <div class="draggable-mark" draggable="true" data-mark="«">«</div>
+                        <div class="draggable-mark" draggable="true" data-mark="»">»</div>
                     </div>
 
                     <div id="drag-questions"></div>
@@ -815,23 +815,23 @@
         const dragSentences = [
             {
                 text: 'قال الرسول - صلى الله عليه وسلم -: {drop} تبسمك في وجه أخيك صدقة {drop}',
-                answer: ['»', '«']
+                answer: ['«', '»']
             },
             {
                 text: 'قال أحد الأدباء: {drop} بالجد تُكتسب المعالي {drop}',
-                answer: ['»', '«']
+                answer: ['«', '»']
             },
             {
                 text: 'نظر إلي أخي مرة، فقال ناصحًا: {drop} يا أخي، صادق من ترى فيه الصدق {drop}',
-                answer: ['»', '«']
+                answer: ['«', '»']
             },
             {
                 text: 'قال جحا: {drop} أريد أن أصنع ختمًا أستخدمه في معاملاتي {drop}',
-                answer: ['»', '«']
+                answer: ['«', '»']
             },
             {
                 text: 'قال عمر بن الخطاب - رضي الله عنه -: {drop} علموا أولادكم الرماية والسباحة وركوب الخيل {drop}',
-                answer: ['»', '«']
+                answer: ['«', '»']
             }
         ];
 
@@ -861,7 +861,7 @@
                 options: [
                     '( )',
                     '[ ]',
-                    '» «',
+                    '« »',
                     '{ }'
                 ],
                 correct: 2
@@ -879,10 +879,10 @@
             {
                 question: 'في أي جملة وُضعت علامة التنصيص بشكل صحيح؟',
                 options: [
-                    'قال الرسول صلى الله عليه وسلم » إنما الأعمال بالنيات «',
-                    'قال الرسول » صلى الله عليه وسلم: إنما الأعمال بالنيات «',
-                    'قال الرسول - صلى الله عليه وسلم -: » إنما الأعمال بالنيات «',
-                    'قال » الرسول - صلى الله عليه وسلم -: إنما الأعمال بالنيات «'
+                    'قال الرسول صلى الله عليه وسلم « إنما الأعمال بالنيات »',
+                    'قال الرسول « صلى الله عليه وسلم: إنما الأعمال بالنيات »',
+                    'قال الرسول - صلى الله عليه وسلم -: « إنما الأعمال بالنيات »',
+                    'قال « الرسول - صلى الله عليه وسلم -: إنما الأعمال بالنيات »'
                 ],
                 correct: 2
             }
@@ -890,27 +890,27 @@
 
         const correctionSentences = [
             {
-                text: 'قال الرسول - صلى الله عليه وسلم -: » من غشنا فليس منا «',
+                text: 'قال الرسول - صلى الله عليه وسلم -: « من غشنا فليس منا »',
                 correct: true
             },
             {
                 text: 'قال المعلم: الاجتهاد طريق النجاح',
                 correct: false,
-                correctVersion: 'قال المعلم: » الاجتهاد طريق النجاح «'
+                correctVersion: 'قال المعلم: « الاجتهاد طريق النجاح »'
             },
             {
-                text: 'قال أحد » الأدباء: بالجد تُكتسب المعالي «',
+                text: 'قال أحد « الأدباء: بالجد تُكتسب المعالي »',
                 correct: false,
-                correctVersion: 'قال أحد الأدباء: » بالجد تُكتسب المعالي «'
+                correctVersion: 'قال أحد الأدباء: « بالجد تُكتسب المعالي »'
             },
             {
-                text: 'قال عمر بن الخطاب - رضي الله عنه -: » علموا أولادكم الرماية والسباحة وركوب الخيل «',
+                text: 'قال عمر بن الخطاب - رضي الله عنه -: « علموا أولادكم الرماية والسباحة وركوب الخيل »',
                 correct: true
             },
             {
                 text: 'نظر إلي أخي مرة، فقال ناصحًا: يا أخي، صادق من ترى فيه الصدق',
                 correct: false,
-                correctVersion: 'نظر إلي أخي مرة، فقال ناصحًا: » يا أخي، صادق من ترى فيه الصدق «'
+                correctVersion: 'نظر إلي أخي مرة، فقال ناصحًا: « يا أخي، صادق من ترى فيه الصدق »'
             }
         ];
 
